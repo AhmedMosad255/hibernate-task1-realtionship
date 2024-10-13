@@ -16,6 +16,7 @@ This project demonstrates the use of **Hibernate ORM** to implement various enti
 
 1. **One-to-One Relationship**:
    - `User` has one `UserDetails`.
+![Screenshot 2024-10-13 210446](https://github.com/user-attachments/assets/ad71ce37-39b3-430b-b9b0-4b5477978f4f)
 
 2. **Many-to-Many Relationship**:
    - `User` can have many `Friends`, and `Friends` can be associated with many `Users`.
