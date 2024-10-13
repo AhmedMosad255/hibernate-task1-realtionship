@@ -14,11 +14,11 @@ public class User {
     private String name;
     private int age;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne
     @JoinColumn(name = "user_details_id")
     private UserDetails details;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany
     @JoinTable(
             name = "user_friends",
             joinColumns = @JoinColumn(name = "user_id"),
@@ -26,7 +26,7 @@ public class User {
     )
     private List<Friends> friends;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "user")
     private List<Post> posts;
 
     public List<Post> getPosts() {
